@@ -23,7 +23,7 @@ public class SystemUtil {
 	 */
 	public static String getProjectClassesPath() {
 		if (classesPath == null) {
-			classesPath = SystemUtil.class.getClassLoader().getResource("")
+			classesPath = SystemUtil.class.getClassLoader().getResource("/")
 					.getPath().trim();
 			if (!isLinux()) {
 				classesPath = classesPath.replaceFirst("/", "");
